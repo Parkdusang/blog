@@ -13,7 +13,7 @@ author: Dusang
 externalLink: false
 ---
 
-![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/tree/gh-pages/assets/images/markdown.jgp)
+![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/markdown.jpg)
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](http://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
 
