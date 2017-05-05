@@ -35,7 +35,7 @@ disqus:
 
 # if you don't have any of social below, comment the line
 facebook: dusang.park.3
-twitter: 
+twitter:
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
@@ -47,12 +47,18 @@ github: Parkdusang
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: 
+medium:
 # vimeo: myvimeo
 email: pesang72@gmail.com
 
 authors:
     johndoe:
+        name: Dusang Park
+        bio: A Man who Develops software and Data scientist
+        external-image: false
+        picture: assets/images/profile.jpg
+        twitter: johndoe
+    Dusang:
         name: Dusang Park
         bio: A Man who Develops software and Data scientist
         external-image: false
