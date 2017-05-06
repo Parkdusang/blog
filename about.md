@@ -4,12 +4,7 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>안녕하세요 개발자 박두상 입니다. 개발에 관심을 가지고 끊임없이 공부하는 대학생 입니다. 처음부터 직접 코딩을 하거나 오픈소스를 가져와 가공해서  현재까지 19개의 중,소규모 프로젝트를 진행했습니다. 프로그래밍 능력 외에도 이론부분에서 분산시스템,네트워크,데이터마이닝,소프트웨어 공학, 운영체제 를 수강했고 코드로 구현가능한 부분은 직접 코드로 구현해보며 공부했습니다. 저는 단순한 코더를 넘어서 IT의 전문적인 지식을 가지고 있고 저의 공부는 진행형입니다.  </p>
 
 
 <h2>Skills</h2>
