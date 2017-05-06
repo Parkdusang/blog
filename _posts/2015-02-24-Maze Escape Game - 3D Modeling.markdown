@@ -8,8 +8,9 @@ tag:
 - markdown
 - components
 - extra
-category: blog
-author: jamesfoster
+category: project
+projects: true
+author: Dusang
 description: Markdown summary with different options
 # jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
 ---
@@ -54,7 +55,7 @@ Like the [Medium](https://medium.com/) component.
 {% highlight html %}
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
+        <img class="image" src="{{ site.url }}/{{ assets/images/1_1.png }}" alt="Alt Text">
         <figcaption class="caption">Photo by John Doe</figcaption>
     </div>
 
