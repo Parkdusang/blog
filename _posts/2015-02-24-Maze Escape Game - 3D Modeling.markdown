@@ -1,7 +1,7 @@
 ---
-title: "Markdown Extra Components"
+title: ":ramen:Maze Escape Game - 3D Modeling"
 layout: post
-date: 2016-02-24 22:48
+date: 2016-08-24 20:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag: jekyll
@@ -16,58 +16,35 @@ externalLink: false
 
 ## Summary:
 
-You can pick as item to see how to apply in markdown.
+C언어와 OpenCV를 이용해서 지형과 캐릭터를 모델링하고 미로를 만드는 알고리즘과 View 를 직접 구현했습니다.
 
 #### Especial Elements
-- [Evidence](#evidence)
-- [Side-by-Side](#side-by-side)
+- [Game manual](#Game manual)
+- [Maze_Algorithm](#Maze_Algorithm)
+- [character Modeling](#character Modeling)
 - [Star](#star)
 - [Especial Breaker](#especial-breaker)
 - [Spoiler](#spoiler)
+- [Videos](#Videos)
 
-#### External Elements
-- [Gist](#gist)
-- [Codepen](#codepen)
-- [Slideshare](#slideshare)
-- [Videos](#videos)
 
 ---
-
-## Evidence
-
-You can try the evidence!
-
-<span class="evidence">Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.</span>
-
-{% highlight html %}
-<span class="evidence">Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.</span>
-{% endhighlight %}
-
----
-
-## Side-by-side
-
-Like the [Medium](https://medium.com/) component.
-
+## Game manual
 **Image** on the left and **Text** on the right:
-
 {% highlight html %}
-<div class="side-by-side">
-    <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ assets/images/1_1.png }}" alt="Alt Text">
-        <figcaption class="caption">Photo by John Doe</figcaption>
-    </div>
+Left : J
+Right : L
+Top : I
+Bottom : K
 
-    <div class="toright">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-</div>
+Change View : M
+Skill(Jump) : E
 {% endhighlight %}
 
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
-        <figcaption class="caption">Photo by John Doe</figcaption>
+        <img class="image" src="{{ site.url }}/{{ 'assets/images/1_1.png' }}" alt="Alt Text">
+        <figcaption class="caption">Photo by Dusang Park</figcaption>
     </div>
 
     <div class="toright">
@@ -77,105 +54,68 @@ Like the [Medium](https://medium.com/) component.
 
 **Text** on the left and **Image** on the right:
 
-{% highlight html %}
 <div class="side-by-side">
     <div class="toleft">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <div class="toright">
-        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
-        <figcaption class="caption">Photo by John Doe</figcaption>
+        <img class="image" src="{{ site.url }}/{{ 'assets/images/1_2.png' }}" alt="Alt Text">
+        <figcaption class="caption">Photo by Dusang Park</figcaption>
     </div>
 </div>
+
+
+---
+## Maze_Algorithm
+
+테두리 부분을 전부 벽으로 만듭니다.  
+<span class="evidence">1,1의 좌표를 시작점으로, width와 height의 -1 지점을 도착지점으로 설정합니다.  </span>
+도착점과 시작점을 설정하게되면 알고리즘에 의해 미로를 maze[y][x]에 저장합니다.  
+maze[][] == 2 는 벽으로 그외엔 길로 인식합니다.  
+자세한 코드는 깃허브에 올라와 있습니다.
+
+{% highlight cpp %}
+void makewall(int y, int x) {
+    checkroad[y][x] = false;
+    int solutionArray[4] = { 1, 2, 3, 4};
+    ShuffleArray(solutionArray);
+
+    for(int i = 0 ; i< 4 ; i++){
+        if(solutionArray[i] == 1){
+            routetop(y ,x);
+        }
+        else if(solutionArray[i] == 2){
+            routeright(y,x);
+        }
+        else if(solutionArray[i] == 3){
+            routebottom(y ,x);
+        }
+        else{
+            routeleft(y ,x);
+        }
+    }
+    return ;
+}
 {% endhighlight %}
+
+---
+
+## Game Clear
 
 <div class="side-by-side">
     <div class="toleft">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img class="image" src="{{ site.url }}/{{ 'assets/images/1_3.png' }}" alt="Alt Text">
+        <figcaption class="caption">Photo by Dusang Park</figcaption>
     </div>
 
     <div class="toright">
-        <img class="image" src="{{ site.url }}/{{ site.picture }}" alt="Alt Text">
-        <figcaption class="caption">Photo by John Doe</figcaption>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 </div>
 
 ---
 
-## Star
-
-You can give evidence to a post. Just add the tag to the markdown file.
-
-{% highlight raw %}
-star: true
-{% endhighlight %}
-
----
-
-## Especial Breaker
-
-You can add a especial *hr* to your text.
-
-{% highlight html %}
-<div class="breaker"></div>
-{% endhighlight %}
-
-<div class="breaker"></div>
-
----
-
-## Spoiler
-
-You can add an especial hidden content that appears on hover.
-
-{% highlight html %}
-<div class="spoiler"><p>your content</p></div>
-{% endhighlight %}
-
-<div class="spoiler"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-
----
-
-## Gist
-
-You can add Gists from github.
-
-{% highlight raw %}
-{ % gist sergiokopplin/91ff4220480727b47224245ee2e9c291 % }
-{% endhighlight %}
-
-{% gist sergiokopplin/91ff4220480727b47224245ee2e9c291 %}
-
----
-
-## Codepen
-
-You can add Pens from Codepen.
-
-{% highlight html %}
-<p data-height="268" data-theme-id="0" data-slug-hash="gfdDu" data-default-tab="result" data-user="chriscoyier" class='codepen'>
-    See the Pen <a href='http://codepen.io/chriscoyier/pen/gfdDu/'>Crappy Recreation of the Book Cover of *The Flame Alphabet*</a> by Chris Coyier (<a href='http://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='http://codepen.io'>CodePen</a>.
-</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-{% endhighlight %}
-
-<p data-height="268" data-theme-id="0" data-slug-hash="gfdDu" data-default-tab="result" data-user="chriscoyier" class='codepen'>See the Pen <a href='http://codepen.io/chriscoyier/pen/gfdDu/'>Crappy Recreation of the Book Cover of *The Flame Alphabet*</a> by Chris Coyier (<a href='http://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
----
-
-## Slideshare
-
-Add your presentations here!
-
-{% highlight html %}
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/hqDhSJoWkrHe7l" width="560" height="310" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-{% endhighlight %}
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/hqDhSJoWkrHe7l" width="560" height="310" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
----
 
 ## Videos
 
@@ -187,11 +127,4 @@ Do you want some videos? Youtube, Vimeo or Vevo? Copy the embed code and paste o
 <iframe width="560" height="310" src="https://www.youtube.com/embed/r7XhWUDj-Ts" frameborder="0" allowfullscreen></iframe>
 {% endhighlight %}
 
-<iframe width="560" height="310" src="https://www.youtube.com/embed/r7XhWUDj-Ts" frameborder="0" allowfullscreen></iframe>
-
-[1]: http://daringfireball.net/projects/markdown/
-[2]: http://www.fileformat.info/info/unicode/char/2163/index.htm
-[3]: http://www.markitdown.net/
-[4]: http://daringfireball.net/projects/markdown/basics
-[5]: http://daringfireball.net/projects/markdown/syntax
-[6]: http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg
+<iframe width="560" height="310" src="https://www.youtube.com/embed/qDNZa_tf7Ic" frameborder="0" allowfullscreen></iframe>
