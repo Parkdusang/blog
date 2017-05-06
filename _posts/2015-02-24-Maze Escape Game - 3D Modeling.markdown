@@ -4,15 +4,14 @@ layout: post
 date: 2016-02-24 22:48
 image: /assets/images/markdown.jpg
 headerImage: false
-tag:
-- markdown
-- components
-- extra
+tag: jekyll
+
+hidden: true # don't count this post in blog pagination
 category: project
 projects: true
 author: Dusang
 description: Markdown summary with different options
-# jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+externalLink: false
 ---
 
 ## Summary:
