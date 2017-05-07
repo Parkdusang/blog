@@ -9,7 +9,7 @@ projects: true
 hidden: true # don't count this post in blog pagination
 description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
 category: project
-author: Dusang
+author: johndoe
 externalLink: false
 ---
 ## Summary:
@@ -26,9 +26,9 @@ Crown해태의 외주작업으로 국악테마의 어플리케이션을 만들�
 
 ![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/2_1.jpeg)  
 
+---  
 
-
-![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/2_1.jpeg)  
+![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/2_2.jpeg)  
 
 ---
 
@@ -36,15 +36,16 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](http://sergiokop
 
 ---
 
-What has inside?
+Android Code
 
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
+- Youtube API
+- BookView (Open source : VersionedGestureDetector)
+- Background Music(Service)
+- Dynamic memory management
+- Splash
+
+
+
 
 ---
 
