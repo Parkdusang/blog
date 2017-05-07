@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: ":iphone: Crown해태 Application"
 layout: post
 date: 2016-01-23 22:10
 tag: jekyll
@@ -12,8 +12,25 @@ category: project
 author: Dusang
 externalLink: false
 ---
+## Summary:
 
-![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/markdown.jpg)
+Crown해태의 외주작업으로 국악테마의 어플리케이션을 만들었습니다.
+제가 소속되어있는 Applay라는 엡 제작 동아리 앞으로 들어온 외주로
+디자인 2 개발자 2명이 이뤄져서 개발을 진행했습니다.
+디자인팀과 처음으로 협업한 프로젝트이고
+
+
+
+
+---
+
+![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/2_1.jpeg)  
+
+
+
+![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/2_1.jpeg)  
+
+---
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](http://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
 
