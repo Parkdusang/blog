@@ -32,7 +32,7 @@ externalLink: false
 
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_2.png' }}" alt="Alt Text">
+        <img class="image" height="400"  src="{{ site.url }}/{{ 'assets/images/3_2.png' }}" alt="Alt Text">
         <figcaption class="caption">Photo by Dusang Park</figcaption>
     </div>
 
@@ -55,14 +55,14 @@ externalLink: false
     </div>
 
     <div class="toright">
-        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_3.png' }}" alt="Alt Text">
+        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/3_3.png' }}" alt="Alt Text">
         <figcaption class="caption">Photo by Dusang Park</figcaption>
     </div>
 </div>
 ---   
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_4.png' }}" alt="Alt Text">
+        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/3_4.png' }}" alt="Alt Text">
         <figcaption class="caption">Photo by Dusang Park</figcaption>
     </div>
 
@@ -80,12 +80,13 @@ externalLink: false
 
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_5.png' }}" alt="Alt Text">
+        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/3_5.png' }}" alt="Alt Text">
         <figcaption class="caption">Daily Report(Customer)</figcaption>
     </div>
-
-    <img class="image" src="{{ site.url }}/{{ 'assets/images/3_6.png' }}" alt="Alt Text">
-    <figcaption class="caption">Assign Exercise</figcaption>
+    <div class="toright">
+        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/3_6.png' }}" alt="Alt Text">
+        <figcaption class="caption">Assign Exercise</figcaption>
+    </div>
 </div>
 
 ---
