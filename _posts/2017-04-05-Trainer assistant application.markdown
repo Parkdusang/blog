@@ -21,13 +21,36 @@ externalLink: false
 구글플레이에 Fitcen이란 이름으로 업로드 되어있습니다.
 
 #### Especial Elements
+- [Skill](#skill)
+- [Videos](#videos)
 - [Introduction](#introduction)
 - [Screenshot](#screenshot)
 - [Link](#link)
-- [Skill](#skill)
+
 
 
 ---
+## Skill
+
+- Google Cloud Messaging
+- Google+ API
+- PHP(Using Background)
+- PageView
+- Splash
+- Dynamic list view(Depending on the database)
+
+
+---  
+## Videos
+
+실제 어플리케이션 데모영상 입니다.
+
+**Youtube**
+
+<iframe width="560" height="310" src="https://www.youtube.com/embed/a_4i_khlDms" frameborder="0" allowfullscreen></iframe>
+
+
+---  
 ## Introduction
 
 <div class="side-by-side">
@@ -93,19 +116,5 @@ externalLink: false
 ## Link
 이 어플리케이션은 현제 구글플레이에 업로드 되어있습니다.  
 - [Google Play](https://play.google.com/store/apps/details?id=com.fitcen.parkdusang.healthtrainer). 하이퍼링크를 클릭하시면 어플리케이션을 다운받으실 수 있습니다.
-
----
-
-## Skill
-
-- Google Cloud Messaging
-- Google+ API
-- PHP(Using Background)
-- PageView
-- Splash
-- Dynamic list view(Depending on the database)
-
-
-
 
 ---
