@@ -30,11 +30,49 @@ externalLink: false
 ---
 ## Introduction
 
-회사소개, 공연영상, 교육 자료, 공연 일정 으로 총 4개의 목록이 있습니다.  
-회사소개엔 기업소개와 회장님 인사말이 포함됩니다.  
-공연영상엔 Youtube API를 통해서 공연된 영상을 볼 수 있습니다.  
-교육자료엔 악보자료나 국악을 들을 수 있습니다.  
-공연일정은 WebView로 되어있고 기업의 홈페이지를 Activity안으로 가져옵니다.  
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_2.png' }}" alt="Alt Text">
+        <figcaption class="caption">Photo by Dusang Park</figcaption>
+    </div>
+
+    <div class="toright">
+        <p>
+        하나의 어플리케이션에서 트레이너 모드와 고객 모드가 나누어져 있습니다.
+        두 모드로 들어가게 되면 각각 제공되는 기능 또한 다르게 제공됩니다.
+        먼저 모드를 선택하게되면 아이뒤와 비밀번호를 입력해야합니다.처음에 아이뒤가 없다면 회원가입을 해야하고, 각 모드별로 아이뒤와 비밀번호는 따로 분리되어있고 비밀번호 찾기와 아이뒤 찾기를 제공하고 있습니다.  <br />  
+        트레이너 모드 선택후 회원가입을 하게되면 트레이너 기능을 제공, 고객모드로 들어가서 회원가입을 선택하면 고객모드를 제공합니다. <br />
+        </p>
+    </div>
+</div>
+---  
+<div class="side-by-side">
+    <div class="toleft">
+        <p>트레이너 모드로 들어오게되면 먼저 고객관리를 할 수 있습니다. <br />
+        지금 자신이 관리하고 있는 고객 명단이 뜨고 + 버튼을 눌러서 고객에게 요청을 보낼 수 있습니다. </p>
+        <span> 이미지는 관리하는 고객 한명을 클릭했을때 이미지 입니다.</span><br />
+        <p>각각의 고객별로 지금까지의 보고서와 오늘 올린 보고서의 내용, 오늘 집에서 해야하는 운동을 운동세트와 세트별 회수, 운동을 하는 방법등에 대해 자세하게 지정해줄 수있고 고객에 맞춰서 피드백을 전송해 줄 수 있습니다.</p>
+    </div>
+
+    <div class="toright">
+        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_3.png' }}" alt="Alt Text">
+        <figcaption class="caption">Photo by Dusang Park</figcaption>
+    </div>
+</div>
+---   
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_4.png' }}" alt="Alt Text">
+        <figcaption class="caption">Photo by Dusang Park</figcaption>
+    </div>
+
+    <div class="toright">
+        <p>고객은 트레이너의 요청을 승락하게되면 다음 이미지와 같은 화면이 등장합니다. 매일 트레이너가 지정해준 목록을 볼 수있고
+        초기에 자신이 목표하는 몸무게,현재 몸의 상황을 트레이너가 기입하면 시각화된 그래프로 자신의 BMI,지방량의 정도,현재 몸무게등을 볼 수있습니다. <br />
+        일 별로 지정받은 운동에 대해서 자신이 실행한 운동을 체크하고 각 운동에대해 트레이너에게 할 말이 있다면 글을써서 트레이너에게 보고서를 올리게 됩니다. 또한 지금까지 자신이 했던 보고서와 트레이너의 피트백을 각 날자별로 정리해서 어떤운동과 어떤 피드백을 받았는지 확인할 수 있습니다.
+        </p>
+    </div>
+</div>
 
 ---
 
@@ -42,39 +80,13 @@ externalLink: false
 
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" src="{{ site.url }}/{{ 'assets/images/1_2.png' }}" alt="Alt Text">
-        <figcaption class="caption">Photo by Dusang Park</figcaption>
+        <img class="image" src="{{ site.url }}/{{ 'assets/images/3_5.png' }}" alt="Alt Text">
+        <figcaption class="caption">Daily Report(Customer)</figcaption>
     </div>
 
-    <div class="toright">
-        <p>게임을 시작하게 되면 빨간색으로 빛나는 부분에 3D Modeling 된 안드로이드가 서 있습니다.  <br />
-        안드로이드는  J,L,K,I 키를 통해 움직일 수 있습니다.  <br />  
-        기본으로 적용되는 View는 맵 전체가 보이지않고 자기 주변만 볼 수 있습니다. <br />
-        안드로이를 움직이게 되면 움직이는 동안은 팔과 다리가 움직이는 에니메이션을 보여줍니다. <br />
-        벽에 부딪히면 넘어갈 수 없게 설계되어 있고 캐릭터의 움직임을 멈추게 되면 다시 서있는 애니메이션으로 돌아옵니다.   </p>
-    </div>
+    <img class="image" src="{{ site.url }}/{{ 'assets/images/3_6.png' }}" alt="Alt Text">
+    <figcaption class="caption">Assign Exercise</figcaption>
 </div>
----  
-<div class="side-by-side">
-    <div class="toleft">
-        <p>게임의 기능을 더하기 위해서 다음과 같은 2가지 기능을 추가했습니다.</p>
-        <span> -벽 점프</span><br />
-        <span> -시점 변환</span>
-        <p>1. E 버튼을 누르면 벽에서 그 건너편으로 점프를 하게 됩니다. 벽을 넘을때도 에니메이션을 제공합니다.</p>
-        <p>1. M 버튼을 누르면 시점을 변경합니다. 전체화면과 자기 주변을 볼 수있는 2가지 View가 있습니다.</p>
-    </div>
-
-    <div class="toright">
-        <img class="image" src="{{ site.url }}/{{ 'assets/images/1_1.png' }}" alt="Alt Text">
-        <figcaption class="caption">Photo by Dusang Park</figcaption>
-    </div>
-</div>
-
-![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/2_1.jpeg)  
-
----  
-
-![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/2_2.jpeg)  
 
 ---
 ## Link

@@ -1,5 +1,5 @@
 ---
-title: ":computer:Maze Escape Game - 3D Modeling"
+title: ":computer: Maze Escape Game - 3D Modeling"
 layout: post
 date: 2016-08-24 20:48
 image: /assets/images/markdown.jpg
