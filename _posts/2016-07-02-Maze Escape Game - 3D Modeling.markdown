@@ -1,7 +1,7 @@
 ---
 title: ":computer: Maze Escape Game - 3D Modeling"
 layout: post
-date: 2016-08-24 20:48
+date: 2016-07-02 20:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag: jekyll
