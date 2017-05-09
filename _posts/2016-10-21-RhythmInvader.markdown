@@ -41,15 +41,22 @@ externalLink: false
 ---
 ## GameFlowchart
 
-![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/4_1.png)  
+<!-- ![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/4_1.png)   -->
+![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/4_2.png)
+![](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/4_4.gif)
+![](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/4_4.gif)
 
+<div class="toleft">
+    <img class="image" height="400"  src="{{ site.url }}/{{ 'assets/images/4_4.gif' }}" alt="Alt Text">
+    <figcaption class="caption">Photo by Dusang Park</figcaption>
+</div>
 <p> 아두이노를 실행하면 대기모드가 실행되고나서 <br />  <span>리모콘으로 노래선택 -> 게임플레이 -> 적중도 출력 -> 대기모드</span>  <br />순서대로 게임이 실행됩니다. </p>
 ---  
 ## Introduction
 
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" height="400"  src="{{ site.url }}/{{ 'assets/images/3_2.png' }}" alt="Alt Text">
+        <img class="image" height="400"  src="{{ site.url }}/{{ 'assets/images/4_3.png' }}" alt="Alt Text">
         <figcaption class="caption">Photo by Dusang Park</figcaption>
     </div>
 
