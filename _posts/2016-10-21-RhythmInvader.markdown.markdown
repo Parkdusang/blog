@@ -3,7 +3,7 @@ title: ":iphone: Rhythm Inavader (Rhythm Game)"
 layout: post
 date: 2016-10-21 22:10
 tag:
-- android
+- Arduino
 - jekyll
 image:  https://Parkdusang.github.io/blog/assets/images/jekyll-logo-light-solid.png
 headerImage: true
@@ -89,7 +89,7 @@ externalLink: false
 
 ---
 ## Link
-이 게임 코드는 현제 깃허브에 올려놨습니다.
+이 게임 코드는 현재 깃허브에 올려놨습니다.
 - [Github](https://github.com/Parkdusang/robotProject). 하이퍼링크를 클릭하시면 깃허브 페이지로 이동합니다.
 
 ---
