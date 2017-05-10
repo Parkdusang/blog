@@ -5,7 +5,6 @@ date: 2016-07-02 20:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag: jekyll
-
 hidden: true # don't count this post in blog pagination
 category: project
 projects: true
