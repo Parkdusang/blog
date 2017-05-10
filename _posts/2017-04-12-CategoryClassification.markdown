@@ -25,7 +25,6 @@ externalLink: false
 #### Especial Elements
 - [Skill](#skill)
 - [Introduction](#introduction)
-- [Videos](#videos)
 - [Link](#link)
 
 
@@ -40,49 +39,83 @@ externalLink: false
 ---
 ## Introduction
 
-<div class="side-by-side">
-    <div class="toleft">
-        <img class="image" height="400"  src="{{ site.url }}/{{ 'assets/images/4_3.png' }}" alt="Alt Text">
-        <figcaption class="caption">Photo by Dusang Park</figcaption>
-    </div>
+모든 뉴스기사의 형식은 아래와 같이 이루워져 있습니다.
+{% highlight text %}
+@DOCUMENT
+#DocID : 1678
+#CAT'03: /건강과 의학/의약학/치의학
+#CAT'07: /정치/정부부처/보건복지부;/건강과 의학/한의학 전통의학;/건강과 의학/치의학
+#TITLE :  치과의원.한의원, 4년사이 폭발적 증가
+#TEXT  :
+ 지난 89년 전국민의료보험 실시이후 국내 의료기관중 치과의원과 한의원은
+   4년사이에 폭발적으로 늘어난데 반해 보건소 또는 보건진료소 등의
+   공공보건기관과 약국 증가율은 극히 미미한 것으로 나타났다.
 
-    <div class="toright" style="padding-top:30px;vertical-align:center; ">
-        <p>
-          이 게임을 진행하기 위해서는 아두이노,8x8LED,Buzer,IRsensor,빨강 노랑 초록색의 LED와 리모콘이 있어야 합니다. <br />
-          먼저 실행을 시키게 되면 8x8LED에 귀여운 도트 이미지가 움직이게 됩니다. <br />
-          이 게임에 있는 곡은 총 3개의 곡으로 유저는 1,2,3번을 누르게되면 그에 맞는 게임을 플레이하게 됩니다. 이떄 LED화면 개수만큼 노래의 노드가 떨어지므로 총 8개의 키로 게임을 하게 됩니다.
-        </p>
-    </div>
-</div>
----  
-<div class="side-by-side">
-    <div class="toleft">
-        <p>게임을 실행하게 되면 각 노래에 맞게 Buzer에서 노래가 흘러나오면서 LED에 노드가 떨어지기 시작합니다.<br / >
-        유저는 노래를 들으면서 노드가 맨 아래줄에 있을때 맞는 버튼을 누르면 게임이 진행됩니다.<br />
-        판정에는 perfect와 good, Fail이 있습니다. 이 판정은 빨간색,노란색, 초록색 LED를 통해서 유저가 실시간으로 알 수 있습니다.
-        그리고 연속으로 10개를 틀리게되면 게임은 종료되게 됩니다.
-        게임이 종료되면 LED화면에 유저가 게임을하면서 전체 노드중에 정확하게(Perfect, good) 누른 비율을 출력해주고 다시 귀여운 도트를 출력시키면서 노래를 선택할 수 있게 구현했습니다.
-        </p>
-    </div>
-    <div class="toright">
-        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/4_4.gif' }}" alt="Alt Text">
-        <figcaption class="caption">Photo by Dusang Park</figcaption>
-    </div>
-</div>
+    13일 보사부에 따르면 지난해 12월31일 현재 전국 의료기관은 모두 4만8천
+   9백64개소로 89년 전국민 의료보험 실시 당시에 비해 7천4백89개소(18.0%)
+   가 늘어났다.
+
+    의료기관을 종별로 보면 치과의원과 한의원은 지난 89년에 비해 각각
+   59.8%, 48.7% 늘어나고 또 의원 26.2%, 병원 16.1%,종합병원 9.9%의
+   증가율을 기록했다.
+{% endhighlight %}
+
+>
+```TEXT
+@DOCUMENT
+```
+>모든 기사는 @DOCUMENT 으로 시작합니다.  
+```TEXT
+#CAT'03: /건강과 의학/의약학/치의학
+```
+>카테고리는 CAT'03 옆에 맨처음 목록을 카테고리로 선정합니다.  여기선 '건강과 의학'이 카테고리가 됩니다.
+```TEXT
+#TEXT  :
+```
+>아래에 있는 부분이 본문으로 이 단어들을 전부 분리해서 기사별로, 그리고 전체 기사의 본문을 저장해서 중복을 제거합니다.   
 
 ---
-## Videos
+split 으로 #TEXT 분리하고 특수문자를 제거해준 다음, 다음과같이 중복을 제거합니다.
 
-실제 게임 데모영상 입니다.
+{% highlight python %}
+DocumentText = sentence[1].strip().split()
+seen1 = set()
+result1 = []
+for item in DocumentText:
+    if item not in seen1:
+        item = item.strip()
+        seen1.add(item)
+        result1.append(item)
+DocumentText = result1
 
-**Youtube**
+for item in DocumentText:
+    allOfData.append(item)
+{% endhighlight %}
+> 각 기사별로 DocumentText에 본문 단어를 저장하고 중복을 제거한 후, 전체적으로 단어를 저장해줍니다.  
 
-<iframe width="560" height="310" src="https://www.youtube.com/embed/dnNiW8sT0Ig" frameborder="0" allowfullscreen></iframe>
+---  
+
+전체단어에서 중복을 제거하고 카이스퀘어 가중치를 적용한 후에 트레이닝 데이터셋과 테스트셋을 다음과 같이 저장합니다.
+{% highlight python %}
+5 8:403.427542 11:373.343612 21:303.420452 31:274.758371 34:266.668932 39:244.188663
+3 2:728.241122 3:677.553595 6:491.396359 8:403.427542 16:341.701329 21:303.420452 26:289.720997
+1 2:728.241122 6:491.396359 39:244.188663 40:242.245916 49:228.634069 56:216.100218 60:213.196119
+...
+4 2:728.241122 14:352.112758 21:303.420452 22:303.279107 26:289.720997 28:283.509302
+{% endhighlight %}
+>맨 왼쪽에 단어는 카테고리 번호입니다. 전체기사의 카테고리를 저장하고 중복을 제거해서 총 개수를 파악,카테고리별로 번호를 매깁니다.  
+
+{% highlight python %}
+5 8:403.427542 11:373.343612
+{% endhighlight %}
+> 전체 단어도 인덱스가 부과됩니다. 이 경우 5번 카테고리에 8번 11번의 단어가 있고 8번은 카이스퀘어 값이 403.427542 11은 373.343612인 경우입니다.  
+
+최종적으로 training File 과 TestFile 이 만들어지면 SVM을 돌려서 결과를 확인합니다.
 
 
 ---
 ## Link
-이 게임 코드는 현재 깃허브에 올려놨습니다.
-- [Github](https://github.com/Parkdusang/robotProject). 하이퍼링크를 클릭하시면 깃허브 페이지로 이동합니다.
+이 코드는 현재 깃허브에 올려놨습니다.
+- [Github](https://github.com/Parkdusang/Categoryclassification). 하이퍼링크를 클릭하시면 깃허브 페이지로 이동합니다.
 
 ---
