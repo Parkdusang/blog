@@ -2,9 +2,7 @@
 title: ":iphone: Category Classification"
 layout: post
 date: 2017-04-12 12:10
-tag:
-- Arduino
-- jekyll
+tag: Python
 image:  https://Parkdusang.github.io/blog/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
@@ -27,8 +25,6 @@ externalLink: false
 - [Introduction](#introduction)
 - [Link](#link)
 
-
-
 ---
 ## Skill
 
@@ -40,7 +36,7 @@ externalLink: false
 ## Introduction
 
 모든 뉴스기사의 형식은 아래와 같이 이루워져 있습니다.
-{% highlight text %}
+```TEXT
 @DOCUMENT
 #DocID : 1678
 #CAT'03: /건강과 의학/의약학/치의학
@@ -59,7 +55,7 @@ externalLink: false
    59.8%, 48.7% 늘어나고 또 의원 26.2%, 병원 16.1%,종합병원 9.9%의
    증가율을 기록했다.
 {% endhighlight %}
-
+```
 >
 ```TEXT
 @DOCUMENT
