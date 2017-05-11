@@ -2,7 +2,9 @@
 title: ":iphone: Category Classification"
 layout: post
 date: 2017-04-12 12:10
-tag: Python
+tag:
+- Datamining
+- Python
 image:  https://Parkdusang.github.io/blog/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true

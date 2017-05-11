@@ -5,7 +5,7 @@ date: 2016-01-23 22:10
 tag:
 - android
 - jekyll
-image:  https://Parkdusang.github.io/blog/assets/images/jekyll-logo-light-solid.png
+image:  https://Parkdusang.github.io/blog/assets/images/2_0.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
