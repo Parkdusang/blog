@@ -5,28 +5,33 @@ date: 2016-08-30 11:10
 tag:
 - java
 - jekyll
-image:  https://Parkdusang.github.io/blog/assets/images/3_1.png
+image:  https://Parkdusang.github.io/blog/assets/images/drawer/title.png
 headerImage: true
 projects: true
-hidden: true # don't count this post in blog pagination
+hidden: true
 description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
 category: project
-author: johndoe
+author: Dusang
 externalLink: false
 ---
 ## Summary:
 
-실제 트레이너와 고객이 집에서도 좀 더 편하게 운동이나 식단보고등을 하고 조언을 하기 편하게 기능을 제공해주는 앱입니다.
-총 3명(개발자 2명 디자인 1명)으로 한 달 동안 진행된 프로젝트 입니다.
-구글플레이에 Fitcen이란 이름으로 업로드 되어있습니다.
+Java Swing을 이용해서 개발한 게임으로 서로 턴을 돌아가면서 한명이 주어진 문제를 그림으로 표현하고 다른 사람들이 그 그림을 맞춰보면서 진행하는 게임입니다. 총 6개의 방을 만들 수 있고 최대 4명이서 게임을 진행할 수 있습니다.  
+아래 깃허브 링크에서 Wifi를 들어가시면 더 자세하게 나와있습니다.
 
 #### Especial Elements
 - [Skill](#skill)
-- [Videos](#videos)
 - [Introduction](#introduction)
 - [Screenshot](#screenshot)
 - [Link](#link)
 
+---
+## Skill
+
+- Java Swing
+- Socket
+- Network
+- MultiThread
 
 
 ---
@@ -73,3 +78,19 @@ Game should be continued for 5 matches. After 5th matches, a user who gets the m
 And Each user's points in the game room are stored, so if user's points exceed a fixed quantity, user's grade becomes higher.
 
 User presses "exit" button to exit game room and returns to waiting room.
+
+---
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/drawer/1_1.jpeg)  
+
+
+
+![Screenshot](https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/images/drawer/1_2.jpeg)  
+---
+
+## Link
+이 코드는 현재 깃허브에 업로드 되어있습니다.  
+- [Github](https://github.com/JunsooLee/Network_16_TermProject). 하이퍼링크를 클릭하시면 코드를 보실 수 있습니다.
+
+---

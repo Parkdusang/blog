@@ -114,7 +114,7 @@ externalLink: false
 
 ---
 ## Link
-이 어플리케이션은 현제 구글플레이에 업로드 되어있습니다.  
+이 어플리케이션은 현재 구글플레이에 업로드 되어있습니다.  
 - [Google Play](https://play.google.com/store/apps/details?id=com.fitcen.parkdusang.healthtrainer). 하이퍼링크를 클릭하시면 어플리케이션을 다운받으실 수 있습니다.
 
 ---
