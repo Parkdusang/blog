@@ -1,5 +1,5 @@
 ---
-title: ":iphone: Category Classification"
+title: ":computer: Category Classification"
 layout: post
 date: 2017-04-12 12:10
 tag:

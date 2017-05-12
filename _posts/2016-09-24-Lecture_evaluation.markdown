@@ -1,5 +1,5 @@
 ---
-title: ":iphone: Lectwell - Lecture_evaluation"
+title: ":computer: iphone: Lectwell - Lecture_evaluation"
 layout: post
 date: 2016-09-24 18:10
 tag:
