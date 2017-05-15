@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Markdown Common Elements"
+title: ":mouse: To be updated"
 layout: post
 date: 2016-02-24 22:44
 image: /assets/images/markdown.jpg
@@ -9,11 +9,12 @@ tag:
 - elements
 star: true
 category: blog
-author: johndoe
+author: Dusnag
 description: Markdown summary with different options
 ---
 
-## Summary:
+Sorry We will update soon.
+<!-- ## Summary:
 
 You can pick as item to see how to apply in markdown.
 
@@ -217,4 +218,4 @@ $(window).scroll(function() {
 [3]: http://www.markitdown.net/
 [4]: http://daringfireball.net/projects/markdown/basics
 [5]: http://daringfireball.net/projects/markdown/syntax
-[6]: http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg
+[6]: http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg -->
