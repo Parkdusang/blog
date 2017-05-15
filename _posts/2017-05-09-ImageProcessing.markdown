@@ -24,6 +24,7 @@ externalLink: false
 - [Content](#content)
   * [Gaussian](#gaussian)
   * [ImageWarping](#imagewarping)
+  * [LaplacianFilter](#laplacianfilter)
 - [Link](#link)
 
 ---
@@ -89,11 +90,11 @@ void GaussianMask(float sigma, float **Mask ,int maskSize){
 
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/imagepro/1_1.png' }}" alt="Alt Text">
+        <img class="image" height="350" src="{{ site.url }}/{{ 'assets/images/imagepro/1_1.png' }}" alt="Alt Text">
         <figcaption class="caption">Before applying the Mark</figcaption>
     </div>
     <div class="toright">
-        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/imagepro/1_2.png' }}" alt="Alt Text">
+        <img class="image" height="350" src="{{ site.url }}/{{ 'assets/images/imagepro/1_2.png' }}" alt="Alt Text">
         <figcaption class="caption">After applying the Mark</figcaption>
     </div>
 </div>
@@ -126,20 +127,47 @@ warpAffine( src, warp_dst, warp_mat, warp_dst.size() );
 {% endhighlight %}
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/imagepro/2_1.png' }}" alt="Alt Text">
+        <img class="image" height="350" src="{{ site.url }}/{{ 'assets/images/imagepro/2_1.png' }}" alt="Alt Text">
         <figcaption class="caption">Before Warping image</figcaption>
     </div>
     <div class="toright">
-        <img class="image" height="400" src="{{ site.url }}/{{ 'assets/images/imagepro/2_2.png' }}" alt="Alt Text">
+        <img class="image" height="350" src="{{ site.url }}/{{ 'assets/images/imagepro/2_2.png' }}" alt="Alt Text">
         <figcaption class="caption">After Warping image</figcaption>
     </div>
 </div>
 
+---
+### LaplacianFilter ###
 
+Sharpness Enhancement using Laplacian Filter  
+g(x,y) = f(x,y) + | Differential differential(f(x,y))|
 
+{% highlight CPP %}
+int Xd[3][3]={  {-1, -1 ,-1},{-1 , 8 ,-1 },{-1 , -1 ,-1} };
+for(int i = 1 ; i < image.rows-1 ; i++){
+    for(int j = 1 ; j<  image.cols-1 ;j++){
+        Gx = 0;
+        for(int  q = 0 ; q < 3 ; q++){
+            for(int p = 0 ; p <  3 ; p++){
+                Gx += Xd[q][p] * dst.at<uchar>(q + i -1 , p + j -1);            
+            }
+        }        
+        finalImg.at<uchar>(i,j) = saturate_cast<uchar>(dst.at<uchar>(i,j)+ Gx);
+    }
+}
+{% endhighlight %}
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" height="350" src="{{ site.url }}/{{ 'assets/images/imagepro/3_1.png' }}" alt="Alt Text">
+        <figcaption class="caption">Before Warping image</figcaption>
+    </div>
+    <div class="toright">
+        <img class="image" height="350" src="{{ site.url }}/{{ 'assets/images/imagepro/3_2.png' }}" alt="Alt Text">
+        <figcaption class="caption">After Warping image</figcaption>
+    </div>
+</div>
 ---
 ## Link
-이 코드는 현재 깃허브에 올려놨습니다.
-- [Github](https://github.com/Parkdusang/Categoryclassification). 하이퍼링크를 클릭하시면 깃허브 페이지로 이동합니다.
-
+이 코드는 깃허브 업로드 예정입니다.
 ---
