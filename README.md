@@ -1,15 +1,14 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/home.png" />
+    <img src="(https://raw.githubusercontent.com/Parkdusang/blog/gh-pages/assets/home.png)  " />
 </p>
 
 ## What has inside
 
-- [Jekyll](https://jekyllrb.com/), [Sass](http://sass-lang.com/) ~[RSCSS](http://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/)
-- Tests with [Travis](https://travis-ci.org/)
-- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
-- No JS. :sunglasses:
+- [Project](https://parkdusang.github.io/blog/projects/)
+- About me [Hyperlink](https://parkdusang.github.io/blog/about/)
+- Blog: [Log](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
 
-## Setup
+## Project
 
 0. :star: to the project. :metal:
 2. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
@@ -25,7 +24,7 @@ If you want to test locally on your machine, do the following steps also:
 5. Open it in your browser: `http://localhost:4000`
 6. Test your app with `bundle exec htmlproofer ./_site`
 
-## Settings
+## About ME
 
 You must fill some informations on `_config.yml` to customize your site.
 
