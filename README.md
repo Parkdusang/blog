@@ -2,26 +2,25 @@
 ## What has inside
 
 - [Project](https://parkdusang.github.io/blog/projects/)
-- About me [Hyperlink](https://parkdusang.github.io/blog/about/)
-- Blog: [Log](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
+- About me ,[Hyperlink](https://parkdusang.github.io/blog/about/)
+- Blog: To be updated
 
 ## Project
 
-0. :star: to the project. :metal:
-2. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
-3. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
-4. Write some posts :bowtie:
+0. :star: Category Classification
+2. Rhythm Inavader (Rhythm Game)
+3. Lectwell - Lecture_evaluation
+4. DrawerDruwa-JavaGame with GUI
+5. :star: Maze Escape Game - 3D Modeling
+6. CrownHaetae Application
+7. Trainer assistant application
 
 
 ## About ME
 
-You must fill some informations on `_config.yml` to customize your site.
-
+제 간단한 소개와 지금까지 진행한 프로젝트 제가 할 수 있는 기술을 업로드 했습니다.
 ```
-name: John Doe
-bio: 'A Man who travels the world eating noodles'
-picture: 'assets/images/profile.jpg'
-...
-
-and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
+ - Skill
+ - Introduction
+ - Project List
 ```
